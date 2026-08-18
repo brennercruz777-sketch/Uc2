@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+body h2{
+    font-family: "Pixelify Sans";
+    font-size: xx-large;
+}
+
 #logotipo {
     max-width: 400px;
     margin: 0 auto;
@@ -52,7 +57,7 @@ nav a {
     padding: 6px 10px;
     border-radius: 4px;
 
-    &:hover{
+    &:hover {
         background-color: #2b3a55;
         color: #ffffff;
     }
@@ -89,5 +94,44 @@ footer {
 }
 
 footer p {
-    color: white;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* CSS de Planos */
+
+
+.tabela-edicoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-edicoes thead th {
+    background-color: #202020;
+    color: #f4f4f4;
+}
+
+.tabela-edicoes caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabela-edicoes th,
+.tabela-edicoes td {
+    border: 1px solid #cccccc;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.tabela-edicoes th[scope="row"] {
+    text-align: left;
+    background-color: gainsboro;
+}
+
+.disponivel {
+    color: green;
 }
