@@ -146,34 +146,43 @@ footer p {
     color: #00ff88;
     font-weight: bold;
 }
+
 /* CSS de Contato */
 
-.form-edicoes{
-    font-weight: bold;
+/* flex-direction */
+/* display */
+
+
+
+.campo {
+    margin: 20px auto;
 }
 
-.form-edicoes input{
-    padding: 10px;
-    margin: 25px;
-    border: 2px solid;
-    border-radius:  5px;
+.campo div label {
     display: flex;
-
+    flex-direction: column;
+    margin-top: 20px;
+    width: 40%;
 }
 
-.form-edicoes label{
-    
+.campo fieldset {
+    width: 35%;
 }
 
-.button-edicoes{
-    background-color: red;
-    border-radius: 5px;
+.campo fieldset label {
+    display: block;
+}
+
+.botao {
+    background-color: #c77dff;
+    border-radius: 4px;
+    font-size: large;
     padding: 10px;
-    color: white;
-    cursor: pointer;
 
     &:hover {
-        background-color: #2b3a55;
-        color: #ffffff;
+        background-color: #A020F0;
+        color: #FFFFFF;
     }
+
 }
+

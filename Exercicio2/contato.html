@@ -9,13 +9,6 @@
 
     <title>Neon Rift</title>
 
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
-<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
-<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
 </head>
 
 <body>
@@ -38,7 +31,7 @@
         <h2>Lista de Espera</h2>
         <p>Insira seus dados</p>
 
-        <form class="form-edicoes" action="#" method="post">
+        <form class="campo">
             <div>
                 <label for="nome">Nome</label>
                 <input
@@ -83,8 +76,98 @@
                 >
             </div>
 
-            <button class="button-edicoes" type="submit">Entrar na lista de espera</button>
-            <button class="button-edicoes" type="reset">Limpar formulário</button>
+            <!-- Aula 06 -->
+
+            <!-- Sistema de opções -->
+            <div>
+                <label for="plataforma">Plataforma preferida</label>
+                <select name="plataforma" id="plataforma">
+                <option value="">Selecione</option>
+                <option value="pc">PC</option>
+                <option value="xbox">Xbox</option>
+                <option value="playstation">Playstation</option>
+                <option value="switch">Nintendo Switch</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Já jogou algum RPG antes?</legend>
+
+                <label for="rpg-sim">
+                    <input 
+                    type="radio"
+                    id="rpg-sim"
+                    name="rpg"
+                    value="sim">
+                    Sim
+                </label>
+
+                <label for="rpg-nao">
+                    <input 
+                    type="radio"
+                    id="rpg-nao"
+                    name="rpg"
+                    value="nao">
+                    Não
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <label for="novidades">
+                    <input 
+                    type="checkbox"
+                    id="novidades"
+                    name="novidades"
+                    value="sim">
+                    Aceito receber novidades por E-mail
+                </label>
+
+                <label for="beta">
+                    <input 
+                    type="checkbox"
+                    id="beta"
+                    name="beta"
+                    value="sinm">
+                    Tenho interesse em participar do beta
+                </label>
+            </fieldset>
+
+            <!-- Sistema para escolher uma cor -->
+            <div>
+                <label for="cor-favorita">Cor de espada favotita</label>
+                <input 
+                type="color"
+                id="cor-favorita"
+                name="cor-favorita"
+                value="#a020F0">
+            </div>
+
+            <!-- Sistema para enviar arquivos -->
+            <!-- (accept="") = Para aceitar somente um tipo de arquivo -->
+            <div>
+                <label for="fanart">Envie sua fanart (opcional)</label>
+                <input 
+                type="file"
+                id="fanart"
+                name="fanart"
+                accept="image/*">
+            </div>
+
+            <!-- Sistema para colocar um bloco de texto -->
+            <!-- Rows = Define quantas linhas visíveis de altura terá uma caixa de texto  -->
+            <div>
+                <label for="recado">Deixe um recado pro estúdio</label>
+                <textarea
+                id="recado"
+                name="recado"
+                rows="4"
+                placeholder="O que você mais espera do jogo?">
+                </textarea>
+            </div>
+            <button class="botao" type="submit">Entrar na lista de espera</button>
+            <button class="botao" type="reset">Limpar formulário</button>
 
         </form>
 
